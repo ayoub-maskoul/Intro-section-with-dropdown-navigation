@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Epilogue', sans-serif;
+}
+:root{
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+}
+header{
+    margin-top: 35px;
+    position: relative;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+}
+header .nav-links{
+    display: flex;
+    justify-content: space-evenly;
+}
+header ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+header ul li{
+    color: var(--Medium-Gray);
+    padding: 5px;
+    cursor: pointer;
+}
+.btn{
+    margin-top: -5px;
+}
+header ul li .btn-2:hover{
+    background-color: var(--Almost-Black);
+    color: var(--Almost-White);
+}
+header ul li .arr-open-1{
+    display: none;
+}
+header ul li button{
+    color: var(--Medium-Gray);
+    background-color: white;
+    border: none;
+    padding: 6px 9px;
+    font-weight: 300;
+    cursor: pointer;    
+}
+header ul li .btn-2{
+    border: 1px solid var(--Medium-Gray);
+    border-radius: 8px;
+}
+header .main-links div{
+    margin: 5px 2px;
+}
+header .links{
+    position: relative;
+}
+header .main-links span{
+    padding-left: 5px;
+}
+.open-links{
+    display: none;
+}
+header .main-links{
+    margin-top: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+    padding: 10px 5px;
+    font-size: 0.8rem;
+    position: absolute;
+    background-color: var(--Almost-White);
+    z-index: 100;
+}
+header .main2{
+    right: 5px;
+    width: 80%;
+}
+header .main{
+    right: 5px;
+    width: 110%;
+}
+
+section {
+    z-index: -1;
+    display: flex;
+    width: 95%;
+    margin:100px auto;
+}
+section .div2 {
+    width: 50%;
+    text-align: center;
+}
+section .div1 {
+    width: 50%;
+    padding: 5%;
+}
+section .div2 img{
+    width: 70%;
+}
+section .div1 h1{
+    font-size: 60px;
+}
+section .div1 p{
+    margin-top: 5px;
+    color: var(--Medium-Gray);
+    font-size: 17px;
+    line-height: 1.4;
+}
+section .div1 button{
+    color: var(--Almost-White);
+    margin-top: 20px;
+    font-weight: 700;
+    background-color: black;
+    border: 2px solid black;
+    padding: 7px 10px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: 00.3s;
+}
+section .div1 button:hover{
+    color: var(--Almost-Black);
+    background-color: var(--Almost-White);
+}
+section .div1 .images{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+section .div1 .images img{
+    padding: 5px;
+}
+.mune{
+    display: none;
+}
+@media (max-width:768px) {
+    .color{
+        transition: 0.3s;
+        background-color: rgba(0, 0, 0, 0.35);
+    }
+    .mune{
+        display: inline-block;
+        cursor: pointer;
+        z-index: 100;
+    }
+    .cls{
+        display: none;
+    }
+    .mn{
+        display: block;
+    }
+    header ul{
+        flex-direction: column;
+    }
+    header .nav-links{
+        flex-direction: column;
+        justify-content: flex-start;
+        position: absolute;
+        top: 40px;
+        height: 100vh;
+        width: 50%;
+        z-index: 1000;
+        transition: 0.4s;
+    }
+    header .lin-btn{
+        right: 10px;
+        background-color: white;
+    }
+    header .mobil-btn{
+        right: -50%;
+        transition: 0.4s;
+    }
+    header .main2,header .main{
+        position: relative;
+        box-shadow: none;
+        margin:0 0 0 25px ;
+        width: fit-content;
+    }
+    section{
+        flex-direction: column-reverse;
+    }
+    section .div1,section .div2{
+        width: 100%;
+        text-align: center;
+    }
+}
